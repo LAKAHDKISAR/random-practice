@@ -1,0 +1,62 @@
+$primary : #0097a7;
+$text: #fff;
+$border: gray;
+@import 'includes/include-media';
+@import 'includes/app';
+
+img {
+    max-width: 100%;
+}
+
+
+
+@mixin shadow($size, $color) {
+    box-shadow: 0px $size $size $color;
+
+    // box-shadow: 0px 10px 10px red;
+}
+
+@mixin buttonStyle($bgcolor, $borderColor, $textcolor) {
+    padding: 20px;
+    background-color: $bgcolor;
+    color: $textcolor;
+    border-radius: 5px;
+    border: 2px solid $borderColor;
+
+}
+
+header {
+    button {
+
+        @include shadow(10px, $primary);
+        @include buttonStyle($primary, red, black);
+
+        // @media screen and (max-width:768px) {
+        //     @include buttonStyle(yellow, black, black);
+        // }
+
+        @include media("<=phone") {
+            @include buttonStyle(yellow, black, black);
+        }
+    }
+
+
+}
+
+.info {
+    button {
+        @include shadow(30px, blue);
+
+
+        @include buttonStyle(blue, white, yellow);
+    }
+}
+
+.withImage {
+    button {
+        @include shadow(40px, red);
+
+
+        @include buttonStyle(red, yellow, black);
+    }
+}

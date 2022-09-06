@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text - CSS</title>
+    <style>
+        .box {
+            box-shadow: 0px 10px 50px black;
+            padding: 30px;
+            text-overflow: ellipsis;
+
+        }
+
+        .box p {
+            text-transform: capitalize;
+            font-size: 30px;
+            text-shadow: 0px 10px 10px black;
+        }
+
+        .box p::first-letter {
+            /* text-transform: capitalize; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nemo impedit quidem mollitia eveniet error
+            magni corrupti laboriosam quasi saepe debitis aut sunt, repellat nobis? Ipsa ullam accusamus suscipit.
+            Aspernatur!</p>
+    </div>
+
+</body>
+
+</html>

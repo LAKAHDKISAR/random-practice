@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media screen and (max-width: 992px) {
+            .box {
+                flex-direction: column;
+            }
+
+            .box .text {
+
+                order: 1;
+            }
+
+            .box img {
+                order: 2;
+                width: 100% !important;
+            }
+        }
+
+        .box img {
+            width: 50%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="https://picsum.photos/id/55/1000/500" alt="">
+        <div class="text">
+            <h3 class="title">Lorem ipsum dolor sit amet.
+            </h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque blanditiis placeat quibusdam tempore
+            itaque. Quae facere nisi architecto velit delectus corrupti non sequi fugit amet consequatur id consequuntur
+            mollitia esse nihil aliquam labore, eveniet minima neque laborum culpa natus deleniti. Laborum corrupti
+            delectus sequi dolore soluta deleniti ut illo repudiandae?
+        </div>
+    </div>
+
+</body>
+
+</html>

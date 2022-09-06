@@ -1,0 +1,21 @@
+.box {
+    height: 200px;
+    width: 500px;
+    border: 10px solid red;
+    background-color: #0097a7;
+    text-decoration: line-through;
+    color: pink;
+    border-image: url('./fish.jpg') 50 / 10px round;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(ellipse at top, #e66465, transparent),
+        radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+}
+
+/* CMYK => Printing  */
+/* Hexdecimal  eg: #090767 */
+/* HSL */

@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "ProximaNovaa";
+    src: url('./Proxima.otf')
+}
+
+@font-face {
+    font-family: "ProximaNovaa";
+    src: url('./Proxima.otf')
+}
+
+body {
+    font-family: "ProximaNovaa";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.teams {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding: 30px;
+}
+
+.teams .teamMember {
+    flex: 1;
+    background-color: #fff;
+    padding-bottom: 30px;
+    overflow: hidden;
+
+}
+
+.teams .teamMember h3,
+.teams .teamMember p {
+    margin-left: 30px;
+}
+
+.teams .teamMember img {
+    width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+.box {
+    height: 100px;
+    width: 100%;
+    background-color: red;
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-left: 30px;
+
+
+
+}
+
+.bio {
+    max-height: 100px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* width */
+.bio::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.bio::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.bio::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.bio::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.teams .teamMember .text {
+    opacity: 0;
+    transition: all 0.3s ease;
+    position: relative;
+    left: -100px;
+    margin-bottom: 30px;
+}
+
+.teams .teamMember:hover .text {
+    opacity: 1;
+    left: 0px;
+}
+
+.teams .teamMember:hover .name {
+    color: red;
+}
+
+.bigBox {
+    height: 500px;
+    width: 400px;
+    background-color: pink;
+    position: relative;
+
+}
+
+
+
+.bigBox::before {
+    content: 'sassa';
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    width: 100px;
+    background-color: orange;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: all 1s ease;
+
+}
+
+.bigBox:hover {
+    background-color: red;
+}
+
+.bigBox:hover::before {
+    left: calc(100% - 100px);
+    top: calc(100% - 100px);
+
+
+}
+
+table td {
+    height: 100px;
+    vertical-align: top;
+}

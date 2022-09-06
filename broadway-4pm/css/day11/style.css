@@ -1,0 +1,84 @@
+.box {
+    height: 100px;
+    width: 200px;
+    background-color: red;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+.wrapperDiv {
+    display: flex;
+    /* property 1 */
+    height: 500px;
+    flex-wrap: wrap;
+    background-color: pink;
+    column-gap: 10px;
+    row-gap: 100px;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+}
+
+/* 
+.wrapperDiv .box:nth-child(1) {
+    align-self: flex-start;
+}
+
+.wrapperDiv .box:nth-child(3) {
+    align-self: flex-end;
+} */
+
+
+/* justify
+
+Flex-start
+center
+flex-end
+space-between
+space-around
+space-evenly
+
+*/
+
+
+.wrapperDiv .box:nth-child(1) {
+    height: 120px;
+    order: 3;
+}
+
+.wrapperDiv .box:nth-child(2) {
+    height: 190px;
+    order: 1;
+}
+
+.wrapperDiv .box:nth-child(3) {
+    height: 300px;
+    order: 4;
+}
+
+.wrapperDiv .box:nth-child(4) {
+    height: 90px;
+    order: 2;
+}
+
+.heading {
+    display: flex;
+    /* height: 200px; */
+    padding: 10px;
+    align-items: center;
+    background-color: orange;
+    /* justify-content: space-between; */
+    justify-content: space-between;
+}
+
+.heading h3 {
+    flex: 1;
+}
+
+.heading .btnwrpper {
+    flex: 1;
+}

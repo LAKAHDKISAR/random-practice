@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - GRID</title>
+
+    <style>
+        .pageLayout {
+            display: grid;
+            gap: 20px;
+            grid-template-areas: " myheader myheader myheader myheader"
+                "myaside mymain mymain mymain "
+                "myfooter myfooter myfooter myfooter";
+
+
+        }
+
+
+        .pageLayout header {
+            grid-column-start: 1;
+            grid-column-end: 13;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-color: red;
+            min-height: 100px;
+            grid-area: myheader;
+        }
+
+        .pageLayout aside {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 8;
+            background-color: blue;
+            min-height: 100px;
+            grid-area: myaside;
+
+
+
+        }
+
+        .pageLayout main {
+            grid-row: 3/8;
+            grid-column-start: 4;
+            grid-column-end: 13;
+            background-color: green;
+            min-height: 100px;
+            grid-area: mymain;
+
+
+        }
+
+        .pageLayout footer {
+            grid-row-start: 8;
+            grid-row-end: 9;
+            grid-column-start: 1;
+            grid-column-end: 13;
+            background-color: black;
+            min-height: 100px;
+            grid-area: myfooter;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="pageLayout">
+        <header>header</header>
+        <aside>Leftbar</aside>
+        <main>Main Content</main>
+        <footer>Footer</footer>
+    </div>
+
+
+
+
+</body>
+
+</html>

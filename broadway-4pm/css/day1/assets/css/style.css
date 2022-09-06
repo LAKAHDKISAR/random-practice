@@ -1,0 +1,16 @@
+/* class selector */
+
+.title {
+    color: blueviolet;
+}
+
+
+#title {
+    color: yellow;
+}
+
+.member {
+    padding-left: 30px;
+    border: 1px solid red;
+    margin-bottom: 30px;
+}

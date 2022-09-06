@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input[type="checkbox"]:default+label {
+            color: red;
+        } */
+
+        input:default {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn:disabled {
+            background-color: red;
+        }
+
+        .importantKey:empty {
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="importantKey"></div>
+    <form action="">
+
+        <div class="group">
+            <label for="uname">Username</label>
+            <input type="text" placeholder="Enter your Username" disabled>
+        </div>
+        <div class="group">
+
+            <input type="radio" id="id1" name="genderSelector">
+            <label for="id1">Male</label>
+        </div>
+        <div class="group">
+
+            <input type="radio" id="id2" name="genderSelector" checked>
+            <label for="id2">Female</label>
+        </div>
+        <div class="group">
+
+            <input type="radio" id="id3" name="genderSelector">
+            <label for="id3">Others</label>
+        </div>
+
+        <button class="btn" type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

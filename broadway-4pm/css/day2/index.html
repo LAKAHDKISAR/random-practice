@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Day 2 - Selectors</title>
+    <!-- which type of css call is this? -->
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ol,
+        li,
+        ul,
+        p,
+        a,
+        table,
+        form {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* this is Internal CSS */
+        #title {
+            /* id selector */
+            font-size: 30px;
+        }
+
+
+        .title {
+            /* Class Selector */
+        }
+
+        /* attribute Selector */
+        [href="#"] {
+            color: red;
+        }
+
+        .box.redBox {
+            background-color: red;
+        }
+
+        .box .greenBox {
+            background-color: green;
+            width: 1200px;
+        }
+
+        .box .yellowBox {
+            background-color: blue;
+        }
+
+        .box {
+            height: 100px;
+            max-width: 300px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+
+
+        /* width */
+        /* browser prefixing */
+        .box::-webkit-scrollbar {
+            width: 10px;
+        }
+
+
+
+        /* Track */
+        .box::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        .box::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        .box::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .formwrapper {
+            padding: 100px 10px 30px 100px;
+            margin: 100px 10px 30px 200px;
+            background-color: red;
+        }
+
+        .formwrapper form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+
+            border-right: 10px solid;
+            border-color: yellow !important;
+
+        }
+
+        .formwrapper form .btn {
+            background-color: green;
+            color: #fff;
+            padding: 10px;
+            /* border: none; */
+            border: none;
+            box-shadow: 10px 30px 20px red;
+        }
+
+        form.loginform {
+            border: 10px solid yellow;
+        }
+
+        form.registerform {
+
+            border-width: 10px;
+            border-style: solid;
+
+            /* border-color: inherit; */
+
+        }
+
+        form.loginform,
+        form.registerform {
+            padding: 100px !important;
+            border-radius: 100px;
+            background-color: black !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="formwrapper">
+
+
+
+        <form action="" class="loginform">
+            <input type="text" placeholder="Enter your name">
+            <button class="btn">Sign In</button>
+        </form>
+        <form action="" class="registerform">
+            <input type="text" placeholder="Enter your name">
+            <button class="btn">Sign In</button>
+        </form>
+
+    </div>
+
+
+    <hr />
+    <h1 id="title">
+        title
+    </h1>
+
+    <a href="#">This link has not a URL</a>
+
+    <div class="box redBox">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit minus qui, consectetur tempore illum explicabo
+        reprehenderit ullam temporibus laudantium ducimus inventore ipsam! Quae, quis ut corporis quibusdam vitae amet
+        voluptatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quos eum mollitia ullam. Sequi, ratione
+        quibusdam tempora optio hic, facere tenetur error quo obcaecati, cum ducimus omnis soluta aspernatur recusandae.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum excepturi iusto doloremque impedit asperiores
+        reiciendis deserunt soluta placeat adipisci magnam alias modi vitae repudiandae fuga at, ab rerum voluptate
+        odit?
+    </div>
+    <div class="box">
+        <div class="  greenBox">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores animi, atque voluptate ab libero aperiam
+            saepe ratione est, laboriosam ullam debitis quasi sunt corrupti aut? Quis ipsam optio nesciunt doloribus.
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="wrappers">
+            <div class="yellowBox">
+                <p>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sit qui magnam dolorum praesentium
+                    mollitia, quasi facilis, reiciendis unde, suscipit ullam maiores eveniet velit in possimus?
+                    Praesentium
+                    commodi molestias nam.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

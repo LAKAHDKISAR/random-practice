@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div.a {
+            white-space: nowrap;
+            width: 50px;
+            overflow: hidden;
+            text-overflow: clip;
+            border: 1px solid #000000;
+
+        }
+
+        div.b {
+            white-space: nowrap;
+            width: 50px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border: 1px solid #000000;
+        }
+
+        div.c {
+            white-space: wrap;
+            width: 50px;
+            overflow: hidden;
+            text-overflow: "-";
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The text-overflow Property</h1>
+
+    <p>The following two divs contains a text that will not fit in the box.</p>
+
+    <div class="a">Hello world! dasa Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quod et in,
+        velit fuga incidunt numquam vitae aut quidem, repellat esse quam eveniet illum quae delectus debitis minus
+        aliquid nostrum!</div>
+
+    <div class="b">Hello world! asdadasdsd</div>
+
+    <div class="c">Hello world!adssdasd</div>
+
+    <p><strong>Note:</strong> The text-overflow: "<em>string</em>" only works in
+        Firefox.</p>
+
+</body>
+
+</html>

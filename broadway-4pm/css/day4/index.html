@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors - State</title>
+
+    <style>
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+        }
+
+        ul li a {
+            color: #333;
+            text-decoration: none;
+            position: relative;
+        }
+
+        ul li a::before {
+            content: "";
+            height: 10px;
+            width: 100px;
+            background-color: black;
+            position: absolute;
+        }
+
+
+
+
+        .wall {
+
+            height: 500px;
+            width: 500px;
+            background-color: red;
+            position: relative;
+        }
+
+
+        .board {
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: yellow;
+            transform: translate(-50%, -50%);
+        }
+
+        /* .flexwrapper {
+            height: 500px;
+            width: 500px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .flexItem {
+            height: 250px;
+            width: 250px;
+            background-color: yellow;
+        }
+
+        .flexwrapper1 {
+            height: 500px;
+            width: 500px;
+            background-color: red;
+
+
+
+        }
+
+        .flexItem1 {
+            height: 250px;
+            width: 250px;
+            background-color: yellow;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- 
+    <div class="flexwrapper">
+        <div class="flexItem"></div>
+    </div> -->
+
+
+    <!-- <div class="flexwrapper1">
+        <div class="flexItem1"></div>
+    </div> -->
+
+    <div class="wall">
+        <div class="board"></div>
+    </div>
+
+    <ul>
+        <li>
+            <a href="#">Link1</a>
+        </li>
+        <li>
+            <a href="#">Link1</a>
+        </li>
+        <li>
+            <a href="#">Link1</a>
+        </li>
+    </ul>
+
+
+</body>
+
+</html>

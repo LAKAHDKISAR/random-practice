@@ -1,0 +1,17 @@
+body {
+  background-color: #0097a7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  color: #0097a7;
+}
+
+.test {
+  height: 100px;
+  width: 100%;
+  background-color: #0097a7;
+}
+/*# sourceMappingURL=myScssStyle.css.map */

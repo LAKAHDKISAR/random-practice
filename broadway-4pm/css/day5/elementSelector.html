@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primaryColor: aqua
+        }
+
+        ::selection {
+            background-color: blueviolet;
+            color: red;
+        }
+
+        #placeholderwala::placeholder {
+            color: var(--primaryColor);
+        }
+
+
+        p {
+            color: var(--primaryColor);
+        }
+
+
+        ul li:first-child a {
+            background-color: orange;
+        }
+
+        ul li:last-child {
+            background-color: orange;
+        }
+
+        ul li:nth-child(5) {
+            background-color: orange;
+        }
+
+        .news::first-letter {
+            font-size: 100px;
+            background-color: orange;
+        }
+
+        .news::first-line {
+            background-color: yellow;
+        }
+
+        .test p:first-of-type {
+            border: 1px solid red;
+        }
+
+        input {
+            padding: 10px 0px;
+            text-indent: 15px;
+            transition: all 0.5s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border: none;
+            text-indent: 35px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+
+        }
+
+        iframe:fullscreen {
+            outline: 10px dotted red;
+            outline-offset: -30px;
+        }
+
+        .btn {
+            padding: 20px;
+            background-color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+            transition: all 5s ease;
+        }
+
+        .btn:hover {
+            background-color: green;
+            color: #fff;
+        }
+
+        input:in-range {
+            border: 2px solid green;
+        }
+
+        .emailInput:invalid {
+            border: 2px solid red;
+
+        }
+
+        a:link {
+            color: red;
+        }
+
+        ul li::marker {
+            height: 10px;
+            width: 10px;
+            background-color: red;
+        }
+
+        .test1 div:not(.no3) {
+            background-color: pink;
+        }
+
+        #placeholderwala {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text">
+
+
+    <div class="test1">
+        <div class="no1">
+            sasa1
+        </div>
+        <div class="no2">
+            sasa2
+        </div>
+        <div class="no3">
+            sasa3
+        </div>
+    </div>
+
+
+
+    <ul>
+        <li>
+            <a href="#">Link1</a>
+        </li>
+        <li>
+            <a href="#">Link2</a>
+        </li>
+        <li>
+            <a href="#">Link3</a>
+        </li>
+    </ul>
+    <hr />
+
+    <a href="#">Link qweugiqweguiqweiug</a>
+
+    <form action="">
+
+        <input type="email" class="emailInput" placeholder="Enter your email">
+        <button type="submit">Click to send</button>
+    </form>
+    <hr />
+
+
+    <input type="number" max="10" min="5">
+
+    <hr />
+
+    <button class="btn">Hover over me</button>
+    <hr />
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PFmuCDHHpwk" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <hr />
+    <form action="">
+        <input id="placeholderwala" type="text" placeholder="Focus on me">
+    </form>
+
+    <hr />
+    <div class="test">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, delectus dolor harum ab rem enim eaque
+            distinctio saepe similique vero adipisci ipsam est at laboriosam repellat voluptas ullam iste ratione!</p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, accusantium.
+        </p>
+    </div>
+    <hr />
+
+
+    <p class="news">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, perferendis. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Eos excepturi porro nulla, qui tempora expedita! Porro tempora incidunt
+        adipisci explicabo vitae labore cupiditate, laudantium sapiente magnam. Excepturi saepe rerum facilis.</p>
+    <hr />
+
+
+    <ul>
+        <li><a href="#">adasda 1</a></li>
+        <li><a href="#">adasda2</a></li>
+        <li><a href="#">adasda3</a></li>
+        <li><a href="#">adasda4</a></li>
+        <li><a href="#">adasda5</a></li>
+        <li><a href="#">adasda6</a></li>
+        <li><a href="#">adasda7</a></li>
+        <li><a href="#">adasda8</a></li>
+        <li><a href="#">adasda9</a></li>
+        <li><a href="#">adasda10</a></li>
+
+
+    </ul>
+    <hr />
+</body>
+
+</html>

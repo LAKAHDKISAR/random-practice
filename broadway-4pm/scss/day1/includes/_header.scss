@@ -1,0 +1,33 @@
+header {
+
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav.admin {
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                a {
+                    color: red;
+                }
+
+                &::after {
+                    content: '>';
+                }
+
+                &:last-child {
+                    a {
+                        color: green;
+                        padding: 10px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+}
